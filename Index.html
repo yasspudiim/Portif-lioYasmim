@@ -1,124 +1,155 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Yasmim Araujo</title>
+    <title>Portfólio - Yasmim Araujo</title>
     <style>
-        /* Reset básico */
-        body, h1, h2, p, ul, li {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #001845, #002855);
             color: #fff;
-            background: linear-gradient(180deg, #002046, #0058a3);
-            line-height: 1.6;
         }
 
-        .header {
+        header {
             text-align: center;
-            padding: 20px;
+            padding: 50px 20px;
         }
 
-        .profile {
-            margin-bottom: 20px;
+        header h1 {
+            font-size: 2.5em;
         }
 
-        .profile-img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 15px;
+        header h2 {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: normal;
         }
 
-        .nav ul {
+        nav {
             display: flex;
             justify-content: center;
-            gap: 15px;
-            list-style: none;
+            background: #001433;
+            padding: 10px 0;
         }
 
-        .nav a {
-            text-decoration: none;
+        nav a {
             color: #fff;
-            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1em;
         }
 
-        .section {
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
             padding: 50px 20px;
             text-align: center;
         }
 
-        .about p {
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #sobre-mim p {
+            font-size: 1em;
+            line-height: 1.6;
             max-width: 600px;
             margin: 0 auto;
         }
 
-        .works .work-grid {
+        #trabalhos {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             padding: 20px;
         }
 
-        .work-item {
-            background: rgba(255, 255, 255, 0.1);
+        .trabalho {
+            background: #01315a;
             padding: 15px;
             border-radius: 8px;
         }
 
-        .summary a {
-            color: #ffd700;
+        .trabalho img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .trabalho h3 {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .trabalho p {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background: #001433;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+
+        footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="profile">
-            <img src="https://yasspudiim.github.io/Portif-lioYasmim/WhatsApp%20Image%202024-11-12%20at%2023.51.04.jpeg" alt="Foto de Yasmim Araujo" class="profile-img">
-            <h1>OLÁ</h1>
-            <h2>Sou a Yasmim Araujo!</h2>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#resumo">Resumo</a></li>
-                <li><a href="#trabalhos">Trabalhos</a></li>
-                <li><a href="#sobre">Sobre Mim</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="sobre" class="section about">
-        <h2>Sobre Mim</h2>
-        <p>Sou estudante de design gráfico e crio soluções visuais criativas e impactantes. No meu portfólio, você encontra projetos como posts para Instagram e identidades visuais para empresas fictícias.</p>
-    </section>
+<header>
+    <h1>OLÁ</h1>
+    <h2>Sou a Yasmim Araujo!</h2>
+</header>
 
-    <section id="trabalhos" class="section works">
-        <h2>Trabalhos</h2>
-        <div class="work-grid">
-            <div class="work-item">Post para Instagram</div>
-            <div class="work-item">Post para Instagram</div>
-            <div class="work-item">Post para Instagram</div>
-            <div class="work-item">Post para Instagram</div>
-        </div>
-    </section>
+<nav>
+    <a href="#sobre-mim">Sobre Mim</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#contato">Contato</a>
+</nav>
 
-    <section id="resumo" class="section summary">
-        <h2>Resumo</h2>
-        <p>Agradeço imensamente pela sua atenção e por dedicar seu tempo para conhecer meu trabalho. Fico à disposição...</p>
-        <p>Contato: <a href="mailto:yasmimaraujoos270@gmail.com">yasmimaraujoos270@gmail.com</a></p>
-    </section>
-</body>
+<section id="sobre-mim">
+    <h2>Sobre Mim</h2>
+    <p>Sou estudante de design gráfico e crio soluções visuais criativas e impactantes. No meu portfólio, você encontra projetos como posts para Instagram e identidades visuais para empresas fictícias, sempre buscando inovar e atender às necessidades de cada cliente.</p>
+</section>
+
+<section id="trabalhos">
+    <h2>Trabalhos</h2>
+    <div class="trabalho">
+        <img src="https://yasspudiim.github.io/Portif-lioYasmim/1.jpg" alt="Foto para anúncio">
+        <h3>Foto para anúncio</h3>
+        <p>Edição de foto com uso de Photoshop para anúncio de produto em marketplace.</p>
+    </div>
+    <div class="trabalho">
+        <img src="https://yasspudiim.github.io/Portif-lioYasmim/a%C3%A7a%C3%AD%20no%20copo_page-0001.jpg" alt="Post para Instagram">
+        <h3>Post para Instagram</h3>
+        <p>Post desenvolvido para divulgação de um novo sabor de açaí.</p>
+    </div>
+    <div class="trabalho">
+        <img src="https://yasspudiim.github.io/Portif-lioYasmim/mulher%20emp..png" alt="Post de beleza">
+        <h3>Post para Instagram</h3>
+        <p>Post focado em produtos de beleza, explorando cores atraentes.</p>
+    </div>
+</section>
+
+<section id="contato">
+    <h2>Contato</h2>
+    <p>Agradeço imensamente pela sua atenção e por dedicar seu tempo para conhecer meu trabalho.</p>
+    <p>E-mail: <a href="mailto:yasmimaraujoos270@gmail.com">yasmimaraujoos270@gmail.com</a></p>
+</section>
+
 </html>
-
-
-
-
-
-
